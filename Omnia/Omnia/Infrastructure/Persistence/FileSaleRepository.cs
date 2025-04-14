@@ -6,7 +6,7 @@ namespace Omnia.Infrastructure.Persistence
 {
 	public class FileSaleRepository : ISaleRepository
 	{
-		private const string FilePath = "sales.json";
+		private const string FilePath = "Infrastructure/Persistence/sales.json";
 
 		private static List<Sale> LoadSales()
 		{
@@ -17,16 +17,11 @@ namespace Omnia.Infrastructure.Persistence
 			return JsonConvert.DeserializeObject<List<Sale>>(json) ?? [];
 		}
 
-		private static void SaveSales(List<Sale> sales)
-		{
-			var json = JsonConvert.SerializeObject(sales, Formatting.Indented);
-			File.WriteAllText(FilePath, json);
-		}
-
 		public void Add(Sale sale)
 		{
 			var sales = LoadSales();
 			sale.Id = sales.Count > 0 ? sales.Max(s => s.Id) + 1 : 1;
+			sale.SaleNumber = $"S{sale.Id:D4}";
 			sales.Add(sale);
 			SaveSales(sales);
 		}
@@ -51,6 +46,12 @@ namespace Omnia.Infrastructure.Persistence
 		public IEnumerable<Sale> GetAll()
 		{
 			return LoadSales();
+		}
+
+		private static void SaveSales(List<Sale> sales)
+		{
+			var json = JsonConvert.SerializeObject(sales, Formatting.Indented);
+			File.WriteAllText(FilePath, json);
 		}
 	}
 }

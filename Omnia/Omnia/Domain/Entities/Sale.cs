@@ -8,7 +8,7 @@ namespace Omnia.Domain.Entities
 		public string SaleNumber { get; set; }
 		public DateTime SaleDate { get; set; }
 		public string Customer { get; set; }
-		public decimal TotalAmount { get; private set; }
+		public decimal TotalAmount => Items.Sum(x => x.Total);
 		public string Branch { get; set; }
 		public List<SaleItem> Items { get; set; } = [];
 		public bool IsCancelled { get; private set; }
@@ -20,7 +20,7 @@ namespace Omnia.Domain.Entities
 				throw new Exception("Cannot sell more than 20 identical items.");
 
 			Items.Add(item);
-			RecalculateTotal();
+			//RecalculateTotal();
 		}
 
 		public void Cancel()
@@ -31,7 +31,7 @@ namespace Omnia.Domain.Entities
 
 		private void RecalculateTotal()
 		{
-			TotalAmount = Items.Sum(i => i.Total);
+			//TotalAmount = Items.Sum(i => i.Total);
 		}
 	}
 }

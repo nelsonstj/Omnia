@@ -20,6 +20,13 @@ namespace Omnia.API.Controllers
 			return CreatedAtAction(nameof(GetById), new { id = newSale.Id }, newSale);
 		}
 
+		[HttpGet("all")]
+		public IActionResult GetAll()
+		{
+			var sale = _saleService._repository.GetAll();
+			return sale == null ? NotFound() : Ok(sale);
+		}
+
 		[HttpGet("{id}")]
 		public IActionResult GetById(int id)
 		{

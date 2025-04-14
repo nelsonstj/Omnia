@@ -1,0 +1,78 @@
+[
+  {
+    "Id": 1,
+    "SaleNumber": "S0001",
+    "SaleDate": "2024-03-14T12:00:00",
+    "Customer": "Nicolas",
+    "TotalAmount": 90.0000,
+    "Branch": "Branch A",
+    "Items": [
+      {
+        "Id": 0,
+        "Product": "Product B",
+        "Quantity": 5,
+        "UnitPrice": 20.00,
+        "Discount": 10.0000,
+        "Total": 90.0000
+      }
+    ],
+    "IsCancelled": false
+  },
+  {
+    "Id": 2,
+    "SaleNumber": "S0002",
+    "SaleDate": "2024-03-14T12:00:00",
+    "Customer": "Nicolas",
+    "TotalAmount": 90.0000,
+    "Branch": "Branch A",
+    "Items": [
+      {
+        "Id": 0,
+        "Product": "Product B",
+        "Quantity": 5,
+        "UnitPrice": 20.00,
+        "Discount": 10.0000,
+        "Total": 90.0000
+      }
+    ],
+    "IsCancelled": false
+  },
+  {
+    "Id": 3,
+    "SaleNumber": "S0003",
+    "SaleDate": "2024-03-14T12:00:00",
+    "Customer": "Nicolas",
+    "TotalAmount": 90.0000,
+    "Branch": "Branch A",
+    "Items": [
+      {
+        "Id": 0,
+        "Product": "Product B",
+        "Quantity": 5,
+        "UnitPrice": 20.00,
+        "Discount": 10.0000,
+        "Total": 90.0000
+      }
+    ],
+    "IsCancelled": false
+  },
+  {
+    "Id": 4,
+    "SaleNumber": "S0004",
+    "SaleDate": "2024-03-14T12:00:00",
+    "Customer": "Nicolas",
+    "TotalAmount": 90.0000,
+    "Branch": "Branch A",
+    "Items": [
+      {
+        "Id": 0,
+        "Product": "Product B",
+        "Quantity": 5,
+        "UnitPrice": 20.00,
+        "Discount": 10.0000,
+        "Total": 90.0000
+      }
+    ],
+    "IsCancelled": false
+  }
+]
