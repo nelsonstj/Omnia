@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnia", "Omnia\Omnia.csproj", "{D367AF4D-935C-4BBF-A153-52E302CB605B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnia.Tests", "Omnia.Tests\Omnia.Tests.csproj", "{5B201DA1-E8BA-987F-F4A7-59BD30B88D58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D367AF4D-935C-4BBF-A153-52E302CB605B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D367AF4D-935C-4BBF-A153-52E302CB605B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D367AF4D-935C-4BBF-A153-52E302CB605B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B201DA1-E8BA-987F-F4A7-59BD30B88D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B201DA1-E8BA-987F-F4A7-59BD30B88D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B201DA1-E8BA-987F-F4A7-59BD30B88D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B201DA1-E8BA-987F-F4A7-59BD30B88D58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

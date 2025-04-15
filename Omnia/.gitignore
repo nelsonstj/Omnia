@@ -1,0 +1,7 @@
+.vs
+﻿*.suo
+Omnia/obj
+Omnia/bin
+Omnia/Infrastructure/Persistence/*_test.json
+Omnia.Tests/bin
+Omnia.Tests/obj

@@ -17,7 +17,7 @@ namespace Omnia.Domain.Entities
 		{
 			// * It's not possible to sell above 20 identical items
 			if (item.Quantity > 20)
-				throw new Exception("Cannot sell more than 20 identical items.");
+				throw new ArgumentOutOfRangeException(nameof(item.Quantity), "Cannot sell more than 20 identical items.");
 
 			Items.Add(item);
 			//RecalculateTotal();
